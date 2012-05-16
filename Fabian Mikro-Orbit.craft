@@ -1,0 +1,362 @@
+ship = Fabian Mikro-Orbit
+version = 0.13.3
+{
+	part = mk1pod_4294715628
+	pos = -0.106797,19.83571,-0.0005644411
+	rot = 0,0,0,1
+	stg = 0
+	istg = 0
+	dstg = 0
+	sidx = 0
+	sqor = -1
+	attm = 0
+	link = stackDecoupler_4294715596
+	link = parachuteSingle_4294715428
+	attN = bottom, stackDecoupler_4294715596
+	attN = top, parachuteSingle_4294715428
+}
+{
+	part = stackDecoupler_4294715596
+	pos = -0.106797,19.45066,-0.0005644411
+	rot = 0,0,0,1
+	stg = 0
+	istg = 1
+	dstg = 1
+	sidx = 0
+	sqor = -1
+	attm = 0
+	link = advSasModule_4294715562
+	attN = bottom, advSasModule_4294715562
+	attN = top, mk1pod_4294715628
+}
+{
+	part = advSasModule_4294715562
+	pos = -0.106797,18.38914,-0.0005644411
+	rot = 0,0,0,1
+	stg = 0
+	istg = 1
+	dstg = 2
+	sidx = 1
+	sqor = 1
+	attm = 0
+	link = fuelTank_4294715534
+	attN = bottom, fuelTank_4294715534
+	attN = top, stackDecoupler_4294715596
+}
+{
+	part = fuelTank_4294715534
+	pos = -0.106797,17.64505,-0.0005644411
+	rot = 0,0,0,1
+	stg = 0
+	istg = 3
+	dstg = 2
+	sidx = 0
+	sqor = 3
+	attm = 0
+	link = fuelTank_4294715510
+	attN = top, advSasModule_4294715562
+	attN = bottom, fuelTank_4294715510
+}
+{
+	part = fuelTank_4294715510
+	pos = -0.106797,16.12948,-0.0005644411
+	rot = 0,0,0,1
+	stg = 0
+	istg = 3
+	dstg = 2
+	sidx = 1
+	sqor = 3
+	attm = 0
+	link = liquidEngine_4294715486
+	link = radialDecoupler_4294715388
+	link = radialDecoupler_4294715338
+	link = radialDecoupler_4294715288
+	link = radialDecoupler_4294715238
+	attN = top, fuelTank_4294715534
+	attN = bottom, liquidEngine_4294715486
+}
+{
+	part = liquidEngine_4294715486
+	pos = -0.106797,14.66499,-0.0005644411
+	rot = 0,0,0,1
+	stg = 0
+	istg = 3
+	dstg = 2
+	sidx = 2
+	sqor = 3
+	attm = 0
+	attN = top, fuelTank_4294715510
+}
+{
+	part = parachuteSingle_4294715428
+	pos = -0.106797,20.24089,-0.0005644411
+	rot = 0,0,0,1
+	stg = 0
+	istg = 0
+	dstg = 0
+	sidx = 1
+	sqor = -1
+	attm = 0
+	attN = bottom, mk1pod_4294715628
+}
+{
+	part = radialDecoupler_4294715388
+	pos = 0.392614,15.75356,-0.0005644113
+	rot = 0,1,0,0
+	stg = 0
+	istg = 2
+	dstg = 3
+	sidx = 0
+	sqor = 2
+	attm = 1
+	link = fuelTank_4294715116
+	sym = radialDecoupler_4294715238
+	sym = radialDecoupler_4294715338
+	sym = radialDecoupler_4294715288
+	srfN = srfAttach, fuelTank_4294715510
+}
+{
+	part = radialDecoupler_4294715338
+	pos = -0.1067971,15.75356,-0.4999755
+	rot = 0,0.7071068,0,-0.7071069
+	stg = 0
+	istg = 2
+	dstg = 3
+	sidx = 1
+	sqor = 2
+	attm = 1
+	link = fuelTank_4294715164
+	sym = radialDecoupler_4294715238
+	sym = radialDecoupler_4294715388
+	sym = radialDecoupler_4294715288
+	srfN = srfAttach, fuelTank_4294715510
+}
+{
+	part = radialDecoupler_4294715288
+	pos = -0.6062081,15.75356,-0.0005644113
+	rot = 0,0,0,-1
+	stg = 0
+	istg = 2
+	dstg = 3
+	sidx = 2
+	sqor = 2
+	attm = 1
+	link = fuelTank_4294715140
+	sym = radialDecoupler_4294715238
+	sym = radialDecoupler_4294715388
+	sym = radialDecoupler_4294715338
+	srfN = srfAttach, fuelTank_4294715510
+}
+{
+	part = radialDecoupler_4294715238
+	pos = -0.106797,15.75356,0.4988466
+	rot = 0,0.7071068,0,0.7071068
+	stg = 0
+	istg = 2
+	dstg = 3
+	sidx = 3
+	sqor = 2
+	attm = 1
+	link = fuelTank_4294715188
+	sym = radialDecoupler_4294715388
+	sym = radialDecoupler_4294715338
+	sym = radialDecoupler_4294715288
+	srfN = srfAttach, fuelTank_4294715510
+}
+{
+	part = fuelTank_4294715188
+	pos = -0.106797,16.15877,1.269244
+	rot = 0,0,0,1
+	stg = 0
+	istg = 4
+	dstg = 4
+	sidx = 0
+	sqor = -1
+	attm = 1
+	link = liquidEngine_4294715034
+	link = parachuteSingle_4294714820
+	sym = fuelTank_4294715116
+	sym = fuelTank_4294715164
+	sym = fuelTank_4294715140
+	srfN = srfAttach, radialDecoupler_4294715238
+	attN = top, parachuteSingle_4294714820
+	attN = bottom, liquidEngine_4294715034
+}
+{
+	part = fuelTank_4294715164
+	pos = -0.1067971,16.15877,-1.270373
+	rot = 0,1,0,-1.192093E-07
+	stg = 0
+	istg = 4
+	dstg = 4
+	sidx = 1
+	sqor = -1
+	attm = 1
+	link = liquidEngine_4294714918
+	link = parachuteSingle_4294714740
+	sym = fuelTank_4294715116
+	sym = fuelTank_4294715188
+	sym = fuelTank_4294715140
+	srfN = srfAttach, radialDecoupler_4294715338
+	attN = top, parachuteSingle_4294714740
+	attN = bottom, liquidEngine_4294714918
+}
+{
+	part = fuelTank_4294715140
+	pos = -1.376604,16.15877,-0.0005644573
+	rot = 0,0.7071068,0,-0.7071068
+	stg = 0
+	istg = 4
+	dstg = 4
+	sidx = 2
+	sqor = -1
+	attm = 1
+	link = liquidEngine_4294714976
+	link = parachuteSingle_4294714780
+	sym = fuelTank_4294715116
+	sym = fuelTank_4294715188
+	sym = fuelTank_4294715164
+	srfN = srfAttach, radialDecoupler_4294715288
+	attN = top, parachuteSingle_4294714780
+	attN = bottom, liquidEngine_4294714976
+}
+{
+	part = fuelTank_4294715116
+	pos = 1.16301,16.15877,-0.0005643654
+	rot = 0,0.7071068,0,0.7071068
+	stg = 0
+	istg = 4
+	dstg = 4
+	sidx = 3
+	sqor = -1
+	attm = 1
+	link = liquidEngine_4294715092
+	link = parachuteSingle_4294714860
+	sym = fuelTank_4294715188
+	sym = fuelTank_4294715164
+	sym = fuelTank_4294715140
+	srfN = srfAttach, radialDecoupler_4294715388
+	attN = top, parachuteSingle_4294714860
+	attN = bottom, liquidEngine_4294715092
+}
+{
+	part = liquidEngine_4294715092
+	pos = 1.16301,14.69428,-0.0005643654
+	rot = 0,-0.7071069,0,0.7071067
+	stg = 0
+	istg = 4
+	dstg = 4
+	sidx = 4
+	sqor = -1
+	attm = 0
+	sym = liquidEngine_4294714918
+	sym = liquidEngine_4294715034
+	sym = liquidEngine_4294714976
+	attN = top, fuelTank_4294715116
+}
+{
+	part = liquidEngine_4294715034
+	pos = -0.106797,14.69428,1.269244
+	rot = 0,-1,0,-1.192093E-07
+	stg = 0
+	istg = 4
+	dstg = 4
+	sidx = 5
+	sqor = -1
+	attm = 0
+	sym = liquidEngine_4294714918
+	sym = liquidEngine_4294715092
+	sym = liquidEngine_4294714976
+	attN = top, fuelTank_4294715188
+}
+{
+	part = liquidEngine_4294714976
+	pos = -1.376604,14.69428,-0.0005644573
+	rot = 0,0.7071067,0,0.7071069
+	stg = 0
+	istg = 4
+	dstg = 4
+	sidx = 6
+	sqor = -1
+	attm = 0
+	sym = liquidEngine_4294714918
+	sym = liquidEngine_4294715092
+	sym = liquidEngine_4294715034
+	attN = top, fuelTank_4294715140
+}
+{
+	part = liquidEngine_4294714918
+	pos = -0.1067971,14.69428,-1.270373
+	rot = 0,0,0,1
+	stg = 0
+	istg = 4
+	dstg = 4
+	sidx = 7
+	sqor = -1
+	attm = 0
+	sym = liquidEngine_4294715092
+	sym = liquidEngine_4294715034
+	sym = liquidEngine_4294714976
+	attN = top, fuelTank_4294715164
+}
+{
+	part = parachuteSingle_4294714860
+	pos = 1.16301,16.94338,-0.0005643654
+	rot = 0,-0.7071069,0,0.7071067
+	stg = 0
+	istg = 3
+	dstg = 3
+	sidx = 3
+	sqor = -1
+	attm = 0
+	sym = parachuteSingle_4294714740
+	sym = parachuteSingle_4294714820
+	sym = parachuteSingle_4294714780
+	attN = bottom, fuelTank_4294715116
+}
+{
+	part = parachuteSingle_4294714820
+	pos = -0.106797,16.94338,1.269244
+	rot = 0,-1,0,-1.192093E-07
+	stg = 0
+	istg = 3
+	dstg = 3
+	sidx = 4
+	sqor = -1
+	attm = 0
+	sym = parachuteSingle_4294714740
+	sym = parachuteSingle_4294714860
+	sym = parachuteSingle_4294714780
+	attN = bottom, fuelTank_4294715188
+}
+{
+	part = parachuteSingle_4294714780
+	pos = -1.376604,16.94338,-0.0005644573
+	rot = 0,0.7071067,0,0.7071069
+	stg = 0
+	istg = 3
+	dstg = 3
+	sidx = 5
+	sqor = -1
+	attm = 0
+	sym = parachuteSingle_4294714740
+	sym = parachuteSingle_4294714860
+	sym = parachuteSingle_4294714820
+	attN = bottom, fuelTank_4294715140
+}
+{
+	part = parachuteSingle_4294714740
+	pos = -0.1067971,16.94338,-1.270373
+	rot = 0,0,0,1
+	stg = 0
+	istg = 3
+	dstg = 3
+	sidx = 6
+	sqor = -1
+	attm = 0
+	sym = parachuteSingle_4294714860
+	sym = parachuteSingle_4294714820
+	sym = parachuteSingle_4294714780
+	attN = bottom, fuelTank_4294715164
+}
+// Do not edit this file by hand. There are no cheating opportunities here. Go away.
